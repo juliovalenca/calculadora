@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora </title>
+</head>
+<body>
+    <nav class = 'barra-navegacao'>
+        <img class= 'barra-navegacao-logotipo' src="img/android-chrome-192x192.png">
+    </nav>
+    <main>
+        <section>
+            <article>
+                <fieldset>
+                    <legend>Quanto você ganha por mês? </legend>
+                    <input id="mes" type="number" value="0"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Quantas horas você trabalha por dia?</legend>
+                    <input id="horas" type="number" value="0"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Quantos dias você trabalha por mês?</legend>
+                    <input id="dias" type="number" value="0"/>
+                </fieldset>
+                <button onclick="calculadoraHora()">Calcular</button>
+            </article>
+        </section>
+        <footer>
+          <h3>
+            <p>
+                R$<span id="resposta"></span>/<small>hora</small>
+            </p>
+          </h3>
+        </footer>
+        <footer class="rodape">
+            Minha primeira calculadora!
+        </footer>
+    </main>
+<script src="calculadora.js"></script>
+</body>
+</html>
